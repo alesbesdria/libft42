@@ -6,23 +6,25 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 04:00:18 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/11/26 18:19:29 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/11/27 17:13:01 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
+#include <libft.h>
+
+void	*ft_memcpy(void *dst, const void *src, size_t n)
 {
-	int i;
+	size_t i;
+	unsigned char* tmp;
+	unsigned char* tmp2;
 
 	i = 0;
-	while (src[i] =< n)
+	tmp = (unsigned char*) dst;
+	tmp2 = (unsigned char*) src;
+	while (i < n)
 	{
-		return (src);
+		tmp[i] = tmp2[i];
+		i++;
+		return (dst);
 	}
-	if ( //overlap)
-	{
-		ft_memmove(src);
-	}
-	dest = src;
-	return (dest);
 }
