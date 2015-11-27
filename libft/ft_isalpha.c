@@ -1,26 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/26 18:21:44 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/11/26 18:21:52 by mmeirsma         ###   ########.fr       */
+/*   Created: 2015/11/26 17:52:06 by mmeirsma          #+#    #+#             */
+/*   Updated: 2015/11/26 17:58:19 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char *ft_strcpy(char *dst, const char *src)
+int		ft_isalpha(int c)
 {
-	int i;
-
-	i = 0;
-	while (*src(i) != '\0')
-	{
-		i++;
-	}
-	*dst = *src
-	return(*dst);
+	if ((c >= 'a') && (c <= 'z'))
+		return (1);
+	if ((c >= 'A') && (c <= 'Z'))
+		return (1);
+	return (0);
 }

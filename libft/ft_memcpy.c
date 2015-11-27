@@ -6,11 +6,11 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 04:00:18 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/11/25 04:40:08 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/11/26 18:19:29 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void	*memcpy(void *restrict dst, const void *restrict src, size_t n)
+void	*ft_memcpy(void *restrict dst, const void *restrict src, size_t n)
 {
 	int i;
 

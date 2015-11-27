@@ -1,26 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strcpy.c                                        :+:      :+:    :+:   */
+/*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/11/26 18:21:44 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/11/26 18:21:52 by mmeirsma         ###   ########.fr       */
+/*   Created: 2015/11/26 18:00:49 by mmeirsma          #+#    #+#             */
+/*   Updated: 2015/11/26 18:03:46 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char *ft_strcpy(char *dst, const char *src)
+int		ft_isalnum(int c)
 {
-	int i;
-
-	i = 0;
-	while (*src(i) != '\0')
-	{
-		i++;
-	}
-	*dst = *src
-	return(*dst);
+	if ((ft_isdigit(c) == 0)) && ((ft_isalnum == 0))
+		return (0);
+	return (1);
 }

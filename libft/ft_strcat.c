@@ -1,6 +1,18 @@
+/* ************************************************************************** */
+/*                                                                            */
+/*                                                        :::      ::::::::   */
+/*   ft_strcat.c                                        :+:      :+:    :+:   */
+/*                                                    +:+ +:+         +:+     */
+/*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
+/*                                                +#+#+#+#+#+   +#+           */
+/*   Created: 2015/11/26 18:21:14 by mmeirsma          #+#    #+#             */
+/*   Updated: 2015/11/26 18:21:24 by mmeirsma         ###   ########.fr       */
+/*                                                                            */
+/* ************************************************************************** */
+
 #include <libft.h>
 
-char *strcat(char *restrict s1, const char *restrict s2)
+char *ft_strcat(char *restrict s1, const char *restrict s2)
 {
 	int i;
 
