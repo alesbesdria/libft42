@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:21:32 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/01 17:29:18 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/01 17:35:12 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,6 +21,5 @@ char	*ft_strchr(const char *s, int c)
 		i++;
 		if (s[i] == c)
 			i++;
-		return (i);
-	return (i);
+	return (s);
 }

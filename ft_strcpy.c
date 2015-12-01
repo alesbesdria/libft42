@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:21:44 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/01 16:02:11 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/01 17:53:42 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,11 @@ char	*ft_strcpy(char *dst, const char *src)
 	int	i;
 
 	i = 0;
-	while (*src(i) != '\0')
+	while (src[i] != '\0')
 	{
 		i++;
 	}
+	src[i] = '\0';
 	*dst = *src;
 	return (dst);
 }
