@@ -6,15 +6,15 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:21:44 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/11/27 17:05:07 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/01 16:02:11 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char *ft_strcpy(char *dst, const char *src)
+char	*ft_strcpy(char *dst, const char *src)
 {
-	int i;
+	int	i;
 
 	i = 0;
 	while (*src(i) != '\0')
@@ -22,5 +22,5 @@ char *ft_strcpy(char *dst, const char *src)
 		i++;
 	}
 	*dst = *src;
-	return(dst);
+	return (dst);
 }

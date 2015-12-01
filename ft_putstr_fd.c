@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 18:50:13 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/11/27 18:50:39 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/01 15:59:07 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,9 @@ void	ft_putstr_fd(char const *s)
 
 	i = 0;
 	while (s[i] != '\0')
+	{
 		ft_putchar_fd(s[i]);
 		i++;
+	}
 	return (0);
 }

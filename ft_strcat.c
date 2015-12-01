@@ -6,21 +6,23 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:21:14 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/11/27 17:10:24 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/01 16:30:08 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-char *ft_strcat(char *s1, const char *s2)
+char	*ft_strcat(char *s1, const char *s2)
 {
-	int i;
+	int	i;
+	int	j;
 
 	i = 0;
-	while (s1[i] != '\0')
+	j = 0;
+	while (s1[i] != '\0' && s2[j] != '\0')
 	{
 		i++;
+		j++;
 	}
-	s2 = s1;
-	return (s2);
+	return (s1[i] - 1, s2[j]);
 }

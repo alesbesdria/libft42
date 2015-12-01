@@ -6,13 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 17:58:50 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/11/26 18:00:30 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/01 15:37:27 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <libft.h>
 
-int ft_isdigit(int c)
+int		ft_isdigit(int c)
 {
 	if ((c >= 0) && (c <= 9))
 		return (1);
