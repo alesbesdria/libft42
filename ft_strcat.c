@@ -6,11 +6,11 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:21:14 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/01 17:09:50 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/03 16:11:09 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 char	*ft_strcat(char *s1, const char *s2)
 {

@@ -6,11 +6,11 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 18:51:09 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/01 15:42:55 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/03 16:22:06 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <libft.h>
+#include "libft.h"
 
 void	ft_putnbr(int n)
 {
