@@ -16,3 +16,18 @@ char	**ft_strsplit(char const *s, char c)
 {
 	i
 }
+{
+	size_t	i;
+
+	i = 0;
+	while (*s != '\0')
+	{
+		while (*s == c && *s != '\0')
+			s++;
+		if (*s != c && *s != '\0')
+			i++;
+		while (*s != c && *s != '\0')
+			s++;
+	}
+	return (i);
+}

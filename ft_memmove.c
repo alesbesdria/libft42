@@ -26,3 +26,23 @@ void		*ft_memmove(void *dst, const void *src, size_t len)
 	}
 	return (dst);
 }
+{
+	char	*copy;
+	char	*p1;
+	size_t	i;
+
+	copy = (char *)malloc(sizeof(char)*n);
+	p1 = (char *)s1;
+	i = 0;
+	while (i < n)
+	{
+		copy[i] = ((char *)s2)[i];
+		i++;
+	}
+	while (n > 0)
+	{
+		n--;
+		p1[n] = copy[n];
+	}
+	return (s1);
+}

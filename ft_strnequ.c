@@ -16,3 +16,19 @@ int		ft_strnequ(char const *s1, char const *s2, size_t n)
 {
 	i
 }
+{
+	size_t		i;
+
+	if (s1 && s2 && n)
+	{
+		i = 0;
+		while (s2[i] != '\0' && s1[i] != '\0' && i < n)
+		{
+			if (s1[i] != s2[i])
+				return (0);
+			i++;
+		}
+		return (1);
+	}
+	return (0);
+}

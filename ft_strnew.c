@@ -16,3 +16,12 @@ char	*ft_strnew(size_t size)
 {
 	i
 }
+{
+	char	*newmem;
+
+	newmem = (char *)malloc(size + 1);
+	if (newmem == NULL)
+		return (NULL);
+	ft_bzero(newmem, size + 1);
+	return (newmem);
+}
