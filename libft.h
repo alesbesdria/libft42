@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/25 03:27:47 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 15:40:49 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/04 17:34:46 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,13 @@
 #include <unistd.h>
 #include <stdlib.h>
 #include <string.h>
+
+typedef struct			s_list
+{
+	void				*content;
+	size_t				content_size;
+	struct s_list		*next;
+}						t_list;
 
 size_t		ft_strlen(const char *s);
 char		*ft_strdup(const char *s1);
