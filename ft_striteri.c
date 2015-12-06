@@ -6,16 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 13:40:29 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/01 13:41:24 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 04:37:43 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int char *))
-{
-	i
-}
 {
 	int		i;
 

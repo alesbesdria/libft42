@@ -6,16 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 13:35:38 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/01 13:36:42 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 04:36:46 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int		ft_strequ(char const *s1, char const *s2)
-{
-	i
-}
 {
 	if (s1 && s2)
 	{

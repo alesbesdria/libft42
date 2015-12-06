@@ -6,16 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:26:58 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 16:13:12 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 04:38:14 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 size_t	ft_strlcat(char *dst, const char *src, size_t n)
-{
-	i
-}
 {
 	size_t	lendst;
 	size_t	lensrc;

@@ -6,16 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 13:48:01 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/01 13:48:45 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 04:39:16 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 char	**ft_strsplit(char const *s, char c)
-{
-	i
-}
 {
 	size_t	i;
 
