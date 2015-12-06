@@ -6,13 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 18:50:13 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 16:10:08 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 02:58:39 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char const *s)
+void	ft_putstr_fd(char const *s, int fd)
 {
 	int i;
 
@@ -22,5 +22,4 @@ void	ft_putstr_fd(char const *s)
 		ft_putchar_fd(s[i]);
 		i++;
 	}
-	return (0);
 }

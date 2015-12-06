@@ -6,14 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 18:41:11 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 16:08:29 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 02:48:48 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putchar_fd(char c)
+void	ft_putchar_fd(char c, int fd)
 {
 	write(fd, &c, 1);
-	return (0);
 }

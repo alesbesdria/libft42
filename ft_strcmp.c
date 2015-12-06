@@ -6,16 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:33:16 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 16:12:05 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 03:08:37 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int		ft_strcmp(const char *s1, const char *s2)
-{
-	i
-}
 {
 	int		i;
 

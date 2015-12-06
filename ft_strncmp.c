@@ -6,16 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:35:42 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 16:14:01 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 03:18:19 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 int		ft_strncmp(const char *s1, const char *s2, size_t n)
-{
-	i
-}
 {
 	if (n == 0)
 		return (0);

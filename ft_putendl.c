@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 19:46:18 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 16:08:41 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 02:54:24 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,14 +14,6 @@
 
 void	ft_putendl(char const *s)
 {
-	int i;
-
-	i = 0;
-	while (s[i] != '\0')
-	{
-		ft_putchar(s[i]);
-		i++;
-	}
-	ft_putchar('\n');
-	return (0);
+	ft_putstr(s);
+	write(1, "\n", 1);
 }

@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:14:45 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 16:03:34 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/06 02:27:31 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,8 +24,10 @@ void	*ft_memccpy(void *dst, const void *src, int c, size_t n)
 	while (i < n)
 	{
 		if (*tmp2 == c)
+		{
 			*tmp++ = *tmp2++;
 			return (tmp);
+		}
 		else
 			*tmp++ = *tmp2++;
 		i++;
