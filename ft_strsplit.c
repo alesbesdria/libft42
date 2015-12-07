@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 13:48:01 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/06 04:39:16 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/07 14:30:57 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,5 +26,5 @@ char	**ft_strsplit(char const *s, char c)
 		while (*s != c && *s != '\0')
 			s++;
 	}
-	return (i);
+	return (0);
 }
