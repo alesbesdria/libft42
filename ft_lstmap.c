@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: dlouise <marvin@42.fr>                     +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/03 16:02:24 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 16:02:28 by mmeirsma         ###   ########.fr       */
+/*   Created: 2015/11/29 02:06:01 by dlouise           #+#    #+#             */
+/*   Updated: 2015/11/29 02:07:50 by dlouise          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,28 +14,24 @@
 
 t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 {
-	t_list	*plst;
-	t_list	*plst2;
-	t_list	*newlist;
-	t_list	*newlist2;
+	t_list	*next;
+	t_list	*current;
+	t_list	*new;
+	t_list	*result;
 
-	plst = lst;
-	while (plst)
-	{
-		f(plst);
-		plst = plst->next;
-	}
-	newlist = ft_lstnew(lst->content, lst->content_size);
-	if (newlist == NULL)
+	if (NULL == lst)
 		return (NULL);
-	plst2 = newlist;
-	while (lst->next)
+	new = f(lst);
+	next = ft_lstnew(new->content, new->content_size);
+	result = next;
+	current = lst->next;
+	while (NULL != current)
 	{
-		newlist2 = ft_lstnew((lst->next)->content, (lst->next)->content_size);
-		if (newlist2 == NULL)
-			return (NULL);
-		newlist->next = newlist2;
-		lst = lst->next;
+		new = f(current);
+		new = ft_lstnew(new->content, new->content_size);
+		next->next = new;
+		current = current->next;
+		next = next->next;
 	}
-	return (plst2);
+	return (result);
 }

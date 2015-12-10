@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 13:44:18 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/06 04:38:34 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/09 10:28:01 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,10 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 
 		j = ft_strlen((char*)s);
 		i = 0;
-		nstr = (char*)malloc(j * sizeof(nstr));
+		nstr = (char*)malloc(j * sizeof(char) + 1);
 		while (s[i] != '\0')
 		{
-			nstr[i] = f(s[i], i);
+			nstr[i] = f(i, s[i]);
 			i++;
 		}
 		return (nstr);

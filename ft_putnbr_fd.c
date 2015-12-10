@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/27 18:57:32 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/06 02:57:50 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/09 13:54:36 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,5 @@
 
 void	ft_putnbr_fd(int n, int fd)
 {
-	if (n >= '0' && n <= '9')
-	{
-		write(fd, &n, 1);
-		n++;
-	}
+	ft_putstr_fd(ft_itoa(n), fd);
 }

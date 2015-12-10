@@ -1,25 +1,16 @@
-/* ************************************************************************** */
-/*                                                                            */
-/*                                                        :::      ::::::::   */
-/*   ft_strsub.c                                        :+:      :+:    :+:   */
-/*                                                    +:+ +:+         +:+     */
-/*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
-/*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/01 13:49:18 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/06 04:39:30 by mmeirsma         ###   ########.fr       */
-/*                                                                            */
-/* ************************************************************************** */
 
 #include "libft.h"
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*sub;
-	int		i;
+	size_t	i;
 
 	i = 0;
 	sub = (ft_strnew(len + 1));
-	while (start <= len)
+	if (!s || !sub)
+		return NULL;
+	while (i < len)
 	{
 		sub[i] = s[start];
 		i++;
