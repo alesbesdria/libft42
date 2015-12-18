@@ -6,7 +6,7 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/11/26 18:21:32 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/07 20:41:51 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/14 16:05:42 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,9 @@
 
 char	*ft_strchr(const char *s, int c)
 {
-	char ch;
-
-	ch = (char)c;
-
-	if (!s)
-		return (NULL);
-	while (*s != '\0' || ch == '\0')
-	{
-		if (*s == ch)
-			return ((char*)s);
+	while (*s != (char)c && *s != '\0')
 		s++;
-	}
+	if (*s == (char)c)
+		return ((char *)s);
 	return (NULL);
 }

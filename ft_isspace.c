@@ -1,32 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strncmp.c                                       :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/07 16:03:44 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/14 16:12:27 by mmeirsma         ###   ########.fr       */
+/*   Created: 2015/12/16 15:43:38 by mmeirsma          #+#    #+#             */
+/*   Updated: 2015/12/16 16:28:44 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int			ft_strncmp(const char *s1, const char *s2, size_t n)
+int		ft_isspace(int c)
 {
-	size_t	i;
-
-	i = 0;
-	while (n != 0)
-	{
-		if (s1[i] > s2[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		if (s2[i] > s1[i])
-			return ((unsigned char)s1[i] - (unsigned char)s2[i]);
-		if (s1[i] == '\0' && s2[i] == '\0')
-			return (0);
-		i++;
-		n--;
-	}
+	if ((9 <= c && c <= 13) || c == 32)
+		return (1);
 	return (0);
 }

@@ -5,30 +5,21 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/03 16:02:58 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/05 02:58:31 by mmeirsma         ###   ########.fr       */
+/*   Created: 2015/12/14 16:57:38 by mmeirsma          #+#    #+#             */
+/*   Updated: 2015/12/14 16:58:24 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	*ft_memalloc(size_t size)
+void		*ft_memalloc(size_t size)
 {
-	char *mem;
+	char	*mem;
 
-	if ((mem = (char*)malloc(sizeof(mem) * size)))
-			return (mem);
+	if ((mem = (char*)malloc(size)))
+	{
+		ft_memset(mem, 0, size);
+		return (mem);
+	}
 	return (NULL);
 }
-
-
-
-//	char	*mem;
-
-//	if ((mem = (char*)malloc(size * sizeof(mem))))
-//	{
-//		ft_memset(mem, 0 , size);
-//		return (mem);
-//	}
-//	return (NULL);
-//}

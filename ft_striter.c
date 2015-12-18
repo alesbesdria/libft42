@@ -6,13 +6,13 @@
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/12/01 13:39:37 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/06 04:37:34 by mmeirsma         ###   ########.fr       */
+/*   Updated: 2015/12/14 16:08:36 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_striter(char *s, void (*f)(char*))
+void		ft_striter(char *s, void (*f)(char*))
 {
 	int		i;
 

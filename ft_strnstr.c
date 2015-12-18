@@ -14,23 +14,13 @@
 
 char	*ft_strnstr(const char *s1, const char *s2, size_t n)
 {
-	size_t	length;
+	size_t len;
 
-	length = ft_strlen(s2);
-	if (!*s2)
+	len = ft_strlen(s2);
+	if (!len)
 		return ((char *)s1);
-	if (length <= n)
-	{
-		while (*s1 && n - length + 1 > 0)
-		{
-			if (*s1 == *s2)
-			{
-				if (ft_memcmp((char *)s1, (char *)s2, length) == 0)
-					return ((char *)s1);
-			}
-			s1++;
-			n--;
-		}
-	}
+	while (*s1 && len <= n--)
+		if (!ft_memcmp(s1++, s2, len))
+			return ((char *)s1 - 1);
 	return (NULL);
 }

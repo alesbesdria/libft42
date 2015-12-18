@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: mmeirsma <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/12/03 16:00:44 by mmeirsma          #+#    #+#             */
-/*   Updated: 2015/12/03 16:00:50 by mmeirsma         ###   ########.fr       */
+/*   Created: 2015/12/14 17:00:10 by mmeirsma          #+#    #+#             */
+/*   Updated: 2015/12/14 17:01:04 by mmeirsma         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,6 @@
 
 void	ft_lstadd(t_list **alst, t_list *new)
 {
-	new->next = *alst;
+	new->next = *alst	;
 	*alst = new;
 }
